@@ -15,7 +15,9 @@ A Django-based To-Do List web application built as part of a Full Stack Internsh
 - Python(Django)
 - HTML
 - CSS
+- Javascript
 - SQLite
+
   
 ## How to Run
 ​- Activate the virtual environment: env\Scripts\activate
