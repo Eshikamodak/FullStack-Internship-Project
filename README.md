@@ -6,8 +6,7 @@ A Django-based To-Do List web application built as part of a Full Stack Internsh
 
 - User Registration
 - User Login & Logout
-- Add Tasks
-- Delete Tasks
+- Add, Edit, Delete Tasks
 - Clean UI Design
 - Django Backend Integration
 
@@ -18,9 +17,3 @@ A Django-based To-Do List web application built as part of a Full Stack Internsh
 - CSS
 - Javascript
 - SQLite
-
-## How to Run
-- Activate the virtual environment: env/Scripts/activate
-- Install the requirements: pip install -r requirements.txt
-- Apply Database Migrations: python manage.py migrate
-- Start the server: python manage.py runserver
