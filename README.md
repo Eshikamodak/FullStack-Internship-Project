@@ -6,8 +6,7 @@ A Django-based To-Do List web application built as part of a Full Stack Internsh
 
 - User Registration
 - User Login & Logout
-- Add Tasks
-- Delete Tasks
+- Add, Edit, Delete Tasks
 - Clean UI Design
 - Django Backend Integration
 
