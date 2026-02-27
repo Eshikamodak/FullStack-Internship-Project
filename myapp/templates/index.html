@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .rectangle-box {
+            width: 300px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+    
+        .register-btn{
+            padding:10px 20px;
+            background-color:rgb(36, 22, 161);
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+
+        }
+        .register-btn:hover{
+            background-color:darkgreen;
+        }
+        body{
+           margin:0;
+           height:100vh;
+           display:flex;
+          flex-direction:column;
+
+        }
+
+        .hero-section{
+           flex:1;
+           display:flex;
+           flex-direction:column;
+           justify-content:center;
+           align-items:center;
+           text-align:center;
+           color:rgb(43, 33, 58);
+
+        }
+
+        .hero-icon{
+           font-size:150px;
+           margin-bottom:18px;
+        }
+
+        .hero-quote{
+           font-size:27px;
+           font-weight:600;
+        }
+    </style>
+    </style>
+
+  </head>
+<body style="background: linear-gradient(135deg,#667eea,#764ba2); min-height:100vh;">
+
+<nav class="navbar navbar-dark bg-dark px-3 align-items-center" >
+  <div class="task" style ="color:white">
+  <h2 >Task Manager</h2>
+    </div>
+
+  
+  {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}" class="btn btn-danger btn-sm">Logout</a>
+    {% endif %}
+   <form >
+  <div  style="text-align: center; margin-top: 1px;  ">
+    <a href="{% url 'register' %}" class="register-btn" class ='blue link' >Sign up</a>
+</div>
+         
+
+</form>
+</nav>
+<div class="hero-section">
+    <i class="fa-solid fa-code-compare hero-icon"></i>
+    <p class="hero-quote">“Small steps today, big success tomorrow.”</p>
+</div>
+<div class="container mt-5">
+    {% block content %}{% endblock %}
+</div>
+<script src="https://kit.fontawesome.com/44a882846e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
